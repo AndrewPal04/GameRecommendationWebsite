@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>--Game Recommendation--</title>
+        <!DOCTYPE html>
+<html>
+    <head>
+        <title>--Game Recommendation--</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+
+    </head>
+    <body>
+        <h1>Answer the following questions to get a game recommendation</h1>
+
+<form action="/predict" method = "POST">
+
+    <div class = "question" required>
+        <label>What device do you often play on?</label><br>
+        <select name = "device" required>
+            <option value = "" disabled selected>-- Select an option --</option>
+            <option value = "1">Tablet/Phone</option>
+            <option value = "2">Laptop/Computer/PC</option>
+            <option value = "3">Playstation/Xbox</option>
+            <option value = "4">Nintendo</option>
+            <option value = "5">Other</option>
+        </select>
+    </div>
+
+    <div class = "question" required>
+        <label>What genre do you prefer?</label><br>
+        <select name = "genre">
+            <option value = "" disabled selected>-- Select an option --</option>
+            <option value = "1">Horror</option>
+            <option value = "2">Fighting</option>
+            <option value = "3">Gun/Combat</option>
+            <option value = "4">sports</option>
+            <option value = "5">Racing</option>
+            <option value = "6">Obstacle</option>
+            <option value = "7">Running</option>
+            <option value = "8">Superheroes</option>
+            <option value = "9">Creativity/Education</option>
+            <option value = "10">Car/Vehicle</option>
+        </select>
+    </div>
+    <div class = "question">
+        <label>How old are you?</label><br>
+        <input type = "number" name ="age" min="5" max="40" class = "select-box">
+    </div>
+    <div class = "question">
+        <label>How intense do you like your games?(Choose from 1-10)</label><br>
+        <input type = "number" name ="intensity" min="1" max="10" class = "select-box">
+    </div>
+    <div class = "question">
+        <label>How much do you care about graphics?</label>
+        <select name = "graphics" required>
+            <option value = "" disabled selected>-- Select an option --</option>
+         <option value = "1">Really good</option>
+         <option value = "2">Somewhat good</option>   
+         <option value = "3">I don't care</option>
+         <option value = "4">Kinda bad</option>
+         <option value = "5">Really bad</option>
+        </select>
+    </div>
+    <div class = "question" required>
+        <label>Do you like games that require WiFi?</label>
+        <select name="WiFi">
+            <option value = "" disabled selected>-- Select an option --</option>
+            <option value = "1">Yes</option>
+            <option value = "2">No</option>
+        </select>
+    </div>
+    <div class = "question" required>
+        <label>Do you like games that are singleplayer or multiplayer?</label>
+        <select name = "player">
+            <option value = "" disabled selected>-- Select an option --</option>
+            <option value = "1">Singleplayer</option>
+            <option value = "2">Both</option>
+            <option value = "3">Multiplayer</option>
+        </select>
+    </div>
+    <div class = "question" required>
+        <label>Do you like to play games with your friends?</label>
+        <select name = "friends">
+            <option value = "" disabled selected>-- Select an option --</option>
+            <option value = "1">Yes</option>
+            <option value = "2">Any</option>
+            <option value = "3">No</option>
+        </select>
+    </div>
+    <div class = "question" required>
+        <label>Which of the following gaming types do you often use?</label>
+        <select name = "type">
+            <option value = "" disabled selected>-- Select an option --</option>
+            <option value = "1">Hands</option>
+            <option value = "2">WASD/Arrows</option>
+            <option value = "3">WASD+Mouse</option>
+        </select>
+     </div>
+
+     <button type = "submit" class = "go">GO!</button>
+</form>
+
+    </body>
+</html>

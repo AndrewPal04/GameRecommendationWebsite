@@ -1,0 +1,30 @@
+body {
+    background: rgb(241, 235, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+button{
+    background: #fcfdfc;
+    color: #090901;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button:hover{
+    background: rgb(93, 182, 88);
+}
+h1{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+.question{
+    margin-bottom:10px;
+}
+label{
+    display:block;
+    margin-bottom:10px;
+    font-size:20px
+}
